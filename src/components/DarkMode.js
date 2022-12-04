@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/DarkMode.css";
 
 const DarkMode = () => {
-    let clickedClass = "clicked";
+    let clickedClass = "clicked";           // clickedClass is going to be applied when we click on button === signal the change in the state
     const body = document.body;
-    const lightTheme = "light";
+    const lightTheme = "light";             //lightTheme and darkTheme are class names applied to the body
     const darkTheme = "dark";
-    let theme;
+    let theme;                             //theme === local property is used to handle selected mode
 
     if (localStorage) {
         theme = localStorage.getItem("theme");
